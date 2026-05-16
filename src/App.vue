@@ -3,7 +3,7 @@
     <div class="left-section">
       <div class="cards-container">
         <div class="card card-front">
-          <img src="/images/card-logo.svg" alt="Card Logo" class="card-logo" />
+          <img src="@/assets/images/card-logo.svg" alt="Card Logo" class="card-logo" />
           <div class="card-number-display">{{ formattedDisplayCardNumber }}</div>
           <div class="card-details-display">
             <span class="card-name-display">{{ cardName || 'Jane Appleseed' }}</span>
@@ -85,7 +85,7 @@
       </div>
 
       <div v-else class="success-container">
-        <img src="/images/icon-complete.svg" alt="Complete Icon" class="complete-icon" />
+        <img src="@/assets/images/icon-complete.svg" alt="Complete Icon" class="complete-icon" />
         <h2>THANK YOU!</h2>
         <p>We've added your card details</p>
         <button class="btn-primary" @click="resetForm">Continue</button>
@@ -243,7 +243,7 @@ body {
 .left-section {
   width: 35%;
   max-width: 483px;
-  background-image: url('/images/bg-main-desktop.png');
+  background-image: url('~@/assets/images/bg-main-desktop.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -270,7 +270,7 @@ body {
 }
 
 .card-front {
-  background-image: url('/images/bg-card-front.png');
+  background-image: url('~@/assets/images/bg-card-front.png');
   background-size: cover;
   padding: 30px;
   display: flex;
@@ -281,7 +281,7 @@ body {
 }
 
 .card-back {
-  background-image: url('/images/bg-card-back.png');
+  background-image: url('~@/assets/images/bg-card-back.png');
   background-size: cover;
   align-self: flex-end;
 }
@@ -447,7 +447,7 @@ input:focus {
     width: 100%;
     height: 250px;
     max-width: none;
-    background-image: url('/images/bg-main-mobile.png');
+    background-image: url('~@/assets/images/bg-main-mobile.png');
     align-items: flex-start;
   }
 
